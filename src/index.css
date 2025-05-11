@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Swiper style enhancements */
+.swiper-pagination-bullet {
+  background-color: #3b82f6 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #2563eb !important;
+}
+/* Contact form field styling */
+./* Contact fields */
+.contact-field {
+  @apply border p-2 rounded transition focus:ring-2 focus:ring-blue-400 focus:outline-none;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Floating icons animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+.animation-delay-6000 {
+  animation-delay: 6s;
+}
+
+/* Animated blobs */
+@keyframes blob {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  25% { transform: translate(40px, -30px) scale(1.05); }
+  50% { transform: translate(-20px, 20px) scale(0.95); }
+  75% { transform: translate(30px, 10px) scale(1.02); }
+}
+.animate-blob {
+  animation: blob 30s infinite ease-in-out;
+}
+
+
+/* Testimonial animation (already present) */
+@keyframes testimonialScrollFade {
+  0%, 100% { transform: translateY(0%); opacity: 1; }
+  33% { transform: translateY(-100%); }
+  66% { transform: translateY(-200%); }
+}
+
+.animate-testimonialScrollFade {
+  animation: testimonialScrollFade 12s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  10%, 90% { opacity: 1; }
+}
+.animate-fadeInOut {
+  animation: fadeInOut 18s ease-in-out infinite;
+}
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 4s ease-in-out infinite;
+}
+@keyframes testimonialScrollFade {
+  0% { transform: translateY(0%); }
+  33.33% { transform: translateY(-100%); }
+  66.66% { transform: translateY(-200%); }
+  100% { transform: translateY(0%); }
+}
+
+.animate-testimonialScrollFade {
+  animation: testimonialScrollFade 12s ease-in-out infinite;
+}
+
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  10%, 90% { opacity: 1; }
+}
+
+.animate-fadeInOut {
+  animation: fadeInOut 20s ease-in-out infinite;
+}
+
+@keyframes logo-float-glow {
+  0%, 100% {
+    transform: translateY(0);
+    filter: drop-shadow(0 0 4px white);
+  }
+  50% {
+    transform: translateY(-10px);
+    filter: drop-shadow(0 0 12px white);
+  }
+}
+
+.animate-logo-float-glow {
+  animation: logo-float-glow 5s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes bounceSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+.animate-bounce-slow {
+  animation: bounceSlow 2s ease-in-out infinite;
+}
